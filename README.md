@@ -72,8 +72,6 @@ fi
 ```
 
 # Membuat variabel konjungsi
-Definisi gambar
-
 ```
 SOURCE_DIR="source_files"
 BACKUP_DIR="backup"
@@ -92,17 +90,17 @@ BACKUP_NAME="backup_$TIMESTAMP.tar.gz"
 ```
 echo "=== Backup dijalankan pada $TIMESTAMP ===" >> $LOG_FILE
 ```
-*mencatat saat tidak ada file yang di temukan
+# mencatat saat tidak ada file yang di temukan
 ```
 echo "Tidak ada file yang memenuhi kriteria." >> $LOG_FILE
 echo "Backup gagal: tidak ada file ditemukan." >> $LOG_FILE
 ```
-*mencatat jika log berhasil
+# mencatat jika log berhasil
 
 ```
 echo "Backup berhasil. $BACKUP_NAME" >> $LOG_FILE
 ```
-*mencatat jika loh gagal
+# mencatat jika loh gagal
 ```
 echo "Backup gagal saat kompres." >> $LOG_FILE
 ```
