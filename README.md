@@ -1,8 +1,6 @@
 # PROJECT[2].LATIHAN-2
 # LANGKAH[1] Buat folder baru
 berikut cara membuat folder baru
-Definisi gambar
-
 ```
 mkdir projectSO_2
 ```
@@ -12,8 +10,6 @@ mkdir source_files backup logs
 
 # Membuat file menggunakan metode perulangan(Loop)
 Berikut cara membuat file menggunakan metode perulangan
-Definisi gambar
-
 ```
 for i in {1..2) do echo " Laporan minggu ke-$i " > laporan$i.txt;done
 ```
@@ -78,8 +74,6 @@ BACKUP_DIR="backup"
 LOG_FILE="logs/backup.log"
 ```
 # Pemindahan file backup ke direktori khusus dengan timestamp
-Definisi gambar
-
 ```
 TIMESTAMP=$(date "+%Y-%m-%d_%0H-%0M-%0S")
 BACKUP_NAME="backup_$TIMESTAMP.tar.gz"
@@ -127,8 +121,7 @@ chmod +x backup.sh
 * `echo "..." >> $LOG_FILE` → mencatat aktivitas backup ke file log
 * `find source -name … -mtime -1`→ mencari file txt/pdf yang diubah dalam 24 jam terakhir
 * `if [ -z "$FILES" ]` → mengecek apakah file ditemukan atau tidak
-* `tar -czvf file.tar.gz files` →
-mengkompres file menjadi arsip .tar.gz
+* `tar -czvf file.tar.gz files` → mengkompres file menjadi arsip .tar.gz
 * `2>> $LOG_FILE` →	mencatat error dari perintah ke file log
 * `$?` → membaca status keberhasilan perintah terakhir
 
